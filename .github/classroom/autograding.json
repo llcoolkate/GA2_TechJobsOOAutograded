@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "TestTask2",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter TestTask2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "TestTask3",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter TestTask3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "TestTask4",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter TestTask4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "TestTask5",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter TestTask5",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "TestTask6",
+      "setup": "",
+      "run": "DOTNET_CLI_HOME=/tmp/ DOTNET_NOLOGO=true dotnet test --filter TestTask6",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
