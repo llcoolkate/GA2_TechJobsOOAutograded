@@ -1,0 +1,23 @@
+
+ID: 9
+Name: Product tester
+Employer: ACME
+Location: Desert
+Position Type: Quality control
+Core Competency: Persistence
+
+
+ID: 10
+Name: Web Developer
+Employer: LaunchCode
+Location: St. Louis
+Position Type: Front-end developer
+Core Competency: JavaScript
+
+
+ID: 11
+Name: Ice cream tester
+Employer: Data not available
+Location: Home
+Position Type: UX
+Core Competency: Tasting ability
