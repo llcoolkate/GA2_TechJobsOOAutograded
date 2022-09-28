@@ -3,8 +3,13 @@ using TechJobsOOAutograded;
 
 namespace TechJobsOO
 {
-    public class Employer
+    public class Employer : JobField
     {
+        public Employer(string value): base(value)
+        {
+        }
+    }
+    /*{
         public int Id { get; }
         private static int nextId = 1; //declares the field nextId. it is STATIC so its changin value is not stored within any Employer object.
         public string Value { get; set; }
@@ -37,5 +42,5 @@ namespace TechJobsOO
             return Value;
         }
 
-    }
+    }*/
 }

@@ -3,8 +3,14 @@ using TechJobsOOAutograded;
 
 namespace TechJobsOO
 {
-    public class CoreCompetency
+    public class CoreCompetency : JobField
     {
+        public CoreCompetency(string value): base(value)
+        {
+
+        }
+    }
+   /* {
 
         public int Id { get; }
         private static int nextId = 1;
@@ -39,5 +45,5 @@ namespace TechJobsOO
             return Value;
         }
 
-    }
+    }*/
 }

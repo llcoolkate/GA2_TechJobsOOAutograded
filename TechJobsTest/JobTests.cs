@@ -61,7 +61,7 @@ namespace TechJobsTest
         [TestMethod]
         public void TestToStringHandlesEmptyField()
         {
-            TechJob testJob1 = new TechJob("Product tester", new Employer(), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+            TechJob testJob1 = new TechJob("Product tester", new Employer(""), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
             string expectedString = $"\n\nID: {testJob1.Id}\nName: {testJob1.Name}\nEmployer: Data not available \nLocation: {testJob1.EmployerLocation}\nPosition Type: {testJob1.JobType}\nCore Competency: {testJob1.JobCoreCompetency}\n\n";
 
