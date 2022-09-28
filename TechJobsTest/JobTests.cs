@@ -1,6 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Reflection;
 using TechJobsOO;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using TechJobsOOAutograded;
+using TechJobsTest;
 
 namespace TechJobsTest
 {
@@ -34,5 +40,36 @@ namespace TechJobsTest
 
             Assert.IsFalse(testJob1.Equals(testJob2), "Objects with different ID are not equal");
         }
+        [TestMethod]//toString 1// when passed an Job object, it should return a string that contains a blank line before and after the job information.  
+        public void TestToStringStartsAndEndsWithNewLine() 
+        {
+            TechJob testJob1 = new TechJob("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+            string tester = testJob1.ToString();
+
+            Assert.IsTrue(tester.StartsWith("\n"));
+            Assert.IsTrue(tester.EndsWith("\n"));
+        }
+        [TestMethod]
+        public void TestToStringContainsCorrectLabelsAndData()
+        {
+            TechJob testJob1 = new TechJob("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+
+            string expectedString = $"\n\nID: {testJob1.Id}\nName: {testJob1.Name}\nEmployer: {testJob1.EmployerName}\nLocation: {testJob1.EmployerLocation}\nPosition Type: {testJob1.JobType}\nCore Competency: {testJob1.JobCoreCompetency}\n\n";
+
+            Assert.AreEqual(expectedString, testJob1.ToString(),"Test strings did not equal each other");
+        }
+        [TestMethod]
+        public void TestToStringHandlesEmptyField()
+        {
+            TechJob testJob1 = new TechJob("Product tester", new Employer(), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+
+            string expectedString = $"\n\nID: {testJob1.Id}\nName: {testJob1.Name}\nEmployer: Data not available \nLocation: {testJob1.EmployerLocation}\nPosition Type: {testJob1.JobType}\nCore Competency: {testJob1.JobCoreCompetency}\n\n";
+
+            Assert.AreEqual(expectedString, testJob1.ToString(), "Test strings did not equal each other");
+        }
+    
+    
     }
+
+
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 namespace TechJobsOO
+
 {
     public class TechJob
     {
@@ -39,7 +40,54 @@ namespace TechJobsOO
             return HashCode.Combine(Id);
         }
 
-        
+        public override string ToString()
+        {
+            string jobListing = "\n";
+            jobListing += $"\nID: {this.Id}\n";
+            
+            if (string.IsNullOrEmpty(this.Name))
+            {
+                jobListing += "Name: Data not available \n";
+
+            }
+            else
+            {
+                jobListing += $"Name: {this.Name}\n";
+            }
+            if (string.IsNullOrEmpty(this.EmployerName.Value))
+            {
+                jobListing += "Employer: Data not available \n";
+            }
+            else
+            {
+                jobListing += $"Employer: {this.EmployerName}\n";
+            }
+            if (string.IsNullOrEmpty(this.EmployerLocation.Value))
+            {
+                jobListing += "Location: Data not available \n";
+            }
+            else
+            {
+                jobListing += $"Location: {this.EmployerLocation}\n";
+            }
+            if (string.IsNullOrEmpty(this.JobType.Value))
+            {
+                jobListing += "Position Type: Data not available \n";
+            }
+            else
+            {
+                jobListing += $"Position Type: {this.JobType}\n";
+            }
+            if (string.IsNullOrEmpty(this.JobCoreCompetency.Value))
+            {
+                jobListing += "Core Competency: Data not available \n";
+            }
+            else
+            {
+                jobListing += $"Core Competency: {this.JobCoreCompetency}\n";
+            }
+            return jobListing +="\n";
+        }
 
 
     }
