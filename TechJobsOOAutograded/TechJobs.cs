@@ -10,7 +10,7 @@ namespace TechJobsOOAutograded
     {
         public void RunProgram()
         {
-            /*
+            
             TechJob job1 = new TechJob("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
             TechJob job2 = new TechJob("Web Developer", new Employer("LaunchCode"), new Location("St. Louis"), new PositionType("Front-end developer"), new CoreCompetency("JavaScript"));
             TechJob job3 = new TechJob("Ice cream tester", new Employer(""), new Location("Home"), new PositionType("UX"), new CoreCompetency("Tasting ability"));
@@ -25,7 +25,7 @@ namespace TechJobsOOAutograded
             {
                 Console.WriteLine(job);
             }
-            */
+            
         }
     }
 }
